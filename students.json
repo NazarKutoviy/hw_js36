@@ -1,0 +1,42 @@
+{
+  "students": [
+    {
+      "id": "3",
+      "name": "1",
+      "age": 14,
+      "course": "Mobile App Development",
+      "skills": [
+        "Java",
+        "Kotlin",
+        "Android Studio"
+      ],
+      "email": "dmytro.shevchenko@example.com",
+      "isEnrolled": false
+    },
+    {
+      "id": "4",
+      "name": "Anastasia Ivanova",
+      "age": 17,
+      "course": "Data Science",
+      "skills": [
+        "Python",
+        "Pandas",
+        "Machine Learning"
+      ],
+      "email": "anastasia.ivanova@example.com",
+      "isEnrolled": true
+    },
+    {
+      "id": "eb69",
+      "name": "N@z1k",
+      "age": 12,
+      "course": "it",
+      "skills": [
+        "писати",
+        "читати"
+      ],
+      "email": "nazarkutoviy@gmail.com",
+      "isEnrolled": true
+    }
+  ]
+}
