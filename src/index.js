@@ -1,13 +1,11 @@
 const API_URL = "http://localhost:3000/students";
 
-
 function getStudents() {
   fetch(API_URL)
     .then((res) => res.json())
     .then((data) => renderStudents(data))
     .catch((error) => console.error("Помилка при отриманні студентів:", error));
 }
- 
 
 function renderStudents(students) {
   const tableBody = document.querySelector("#students-table tbody");
@@ -33,7 +31,6 @@ function renderStudents(students) {
     tableBody.appendChild(row);
   });
 }
-
 
 function addStudent(e) {
   e.preventDefault();
@@ -63,7 +60,6 @@ function addStudent(e) {
     .catch((error) => console.error("Помилка при додаванні студента:", error));
 }
 
-
 function updateStudent(id) {
   const newName = prompt("Введіть нове ім’я студента:");
   if (newName) {
@@ -78,7 +74,6 @@ function updateStudent(id) {
   }
 }
 
-
 function deleteStudent(id) {
   if (confirm("Ви дійсно хочете видалити цього студента?")) {
     fetch(`${API_URL}/${id}`, {
@@ -88,7 +83,6 @@ function deleteStudent(id) {
       .catch((error) => console.error("Помилка при видаленні:", error));
   }
 }
-
 
 document
   .getElementById("get-students-btn")
